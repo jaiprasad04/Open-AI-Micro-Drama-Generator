@@ -60,7 +60,7 @@ export default function HomePage() {
 
           {/* Title */}
           <h1 className="text-6xl md:text-7xl font-black tracking-tight mb-6">
-            <span className="gradient-text">ViGen</span>
+            <span className="gradient-text">MicroDrama AI</span>
           </h1>
           <p className="text-xl md:text-2xl font-light mb-3" style={{ color: "#94a3b8" }}>
             Agentic AI Video Generation
@@ -115,7 +115,7 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="text-center pb-8 text-sm" style={{ color: "#374151" }}>
-        ViGen &mdash; Built on MuAPI generative media infrastructure
+        MicroDrama AI &mdash; Built on MuAPI generative media infrastructure
       </footer>
     </main>
   );

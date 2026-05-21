@@ -23,7 +23,7 @@ from agents.character_extractor import CharacterExtractor
 # ---------------------------------------------------------------------------
 # App setup
 # ---------------------------------------------------------------------------
-app = FastAPI(title="ViGen API", version="1.0.0")
+app = FastAPI(title="MicroDrama AI API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -163,7 +163,7 @@ async def run_pipeline(job_id: str, req: GenerateRequest) -> None:
 # ---------------------------------------------------------------------------
 @app.get("/api/health")
 async def health():
-    return {"status": "ok", "service": "vigen-api"}
+    return {"status": "ok", "service": "microdrama-api"}
 
 
 @app.post("/api/generate", response_model=GenerateResponse)

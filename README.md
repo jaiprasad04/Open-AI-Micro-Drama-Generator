@@ -1,6 +1,6 @@
-# ViGen — Agentic AI Video Generation
+# MicroDrama AI — Agentic Micro-Drama Video Generator
 
-ViGen is a multi-agent video generation web app. You provide an idea or script; a coordinated pipeline of AI agents writes the story, designs the storyboard, generates frames, and produces a complete cinematic video — automatically, powered entirely by [MuAPI](https://muapi.ai).
+MicroDrama AI is a multi-agent video generation web app. You provide an idea or script; a coordinated pipeline of AI agents writes the story, designs the storyboard, generates frames, and produces a complete cinematic video — automatically, powered entirely by [MuAPI](https://muapi.ai).
 
 ---
 
@@ -15,17 +15,17 @@ Idea / Script
 │                                                         │
 │  ┌─────────────────┐     ┌──────────────────────────┐   │
 │  │ Screenwriter    │ ──► │ Scene scripts (2-4)      │   │
-│  │ (Claude)        │     └──────────────────────────┘   │
+│  │ (MuAPI LLM)     │     └──────────────────────────┘   │
 │  └─────────────────┘                  │                 │
 │                                       ▼                 │
 │  ┌─────────────────┐     ┌──────────────────────────┐   │
 │  │ CharacterExtra- │ ──► │ Character descriptions   │   │
-│  │ ctor (Claude)   │     └──────────────────────────┘   │
+│  │ ctor (MuAPI LLM)│     └──────────────────────────┘   │
 │  └─────────────────┘                  │                 │
 │                                       ▼                 │
 │  ┌─────────────────┐     ┌──────────────────────────┐   │
 │  │ Storyboard      │ ──► │ Shots (3-5 per scene)    │   │
-│  │ Artist (Claude) │     └──────────────────────────┘   │
+│  │ Artist (MuAPI)  │     └──────────────────────────┘   │
 │  └─────────────────┘                  │                 │
 │                                       ▼                 │
 │  ┌────────────────────────────────────────────────────┐ │
@@ -48,11 +48,11 @@ Idea / Script
 
 | Stage | Agent/Tool | What it does |
 |-------|-----------|--------------|
-| Story | Screenwriter (Claude) | Expands idea into a story outline |
-| Characters | Character Extractor (Claude) | Pulls characters + visual descriptions |
-| Scene scripts | Screenwriter (Claude) | Writes 2-4 individual scene scripts |
+| Story | Screenwriter (MuAPI LLM) | Expands idea into a story outline |
+| Characters | Character Extractor (MuAPI LLM) | Pulls characters + visual descriptions |
+| Scene scripts | Screenwriter (MuAPI LLM) | Writes 2-4 individual scene scripts |
 | Portraits | MuAPI flux-dev T2I | Reference portrait image per character |
-| Storyboard | Storyboard Artist (Claude) | 3-5 shots per scene with visual/motion/audio |
+| Storyboard | Storyboard Artist (MuAPI LLM) | 3-5 shots per scene with visual/motion/audio |
 | Frames | MuAPI flux-kontext I2I / flux-dev T2I | First frame per shot (with character consistency) |
 | Video clips | MuAPI kling-v2.1 I2V | 5-second video per shot |
 | Concat | moviepy | All clips joined into final video |

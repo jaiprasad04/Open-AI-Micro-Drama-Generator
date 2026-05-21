@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "ViGen — Agentic AI Video Generation",
+  title: "MicroDrama AI — Agentic Micro-Drama Generator",
   description:
     "Transform any idea into a complete cinematic video using a multi-agent AI pipeline powered by MuAPI.",
 };
