@@ -31,6 +31,12 @@ Type an idea. MicroDrama AI autonomously handles everything: story development, 
 
 ---
 
+## Related Projects
+
+- [AI-Youtube-Shorts-Generator](https://github.com/SamurAIGPT/AI-Youtube-Shorts-Generator) — Auto-clip and crop your AI dramas into viral YouTube Shorts
+- [Clip-Anything](https://github.com/SamurAIGPT/Clip-Anything) — Clip any moment from your AI drama with text prompts
+- [AI-Faceless-Video-Generator](https://github.com/SamurAIGPT/AI-Faceless-Video-Generator) — Generate faceless AI videos for your drama channel
+
 ## 🎥 Demo Video
 
 https://github.com/user-attachments/assets/f8b5d09c-8c58-40c1-b171-e3f42b0d71a8
