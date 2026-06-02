@@ -33,7 +33,7 @@ Type an idea. MicroDrama AI autonomously handles everything: story development, 
 
 ## 🎥 Demo Video
 
-https://github.com/user-attachments/assets/YOUR_VIDEO_ID_HERE
+https://github.com/user-attachments/assets/f8b5d09c-8c58-40c1-b171-e3f42b0d71a8
 
 Watch MicroDrama AI transform ideas into fully cinematic micro-drama videos using autonomous AI agents, character-consistent image generation, storyboarding, and MuAPI-powered video creation.
 
